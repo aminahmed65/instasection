@@ -1,0 +1,53 @@
+<article class="card col border-0 rounded-0 align-self-stretch">
+    <h3 id="{{ include.header-id }}" class="card-header bg-dark-blue rounded-0 p-0 overflow-hidden">
+        <a class="card-header-toggle d-flex justify-content-between text-decoration-none text-white ps-3 position-relative top-50"
+            data-bs-toggle="collapse" href="#{{ include.id }}" role="button" aria-expanded="true"
+            aria-controls="{{ include.id }}">
+            {{ include.title }}
+            <div class="arrow-icon bg-dark-purple position-absolute d-inline-flex overflow-hidden">
+                {% include arrow.svg %}
+            </div>
+        </a>
+    </h3>
+    <div class="collapse show" id="{{ include.id }}">
+        <div class="card card-body bg-ice-white body-text border-0">
+            {{ include.body }}
+        </div>
+    </div>
+</article>
+<style>
+    /* 42 - lg */
+    /* 56 - sm */
+    .card-header {
+        height: 3.125rem;
+    }
+
+    .card-header-toggle {
+        transform: translateY(-50%);
+    }
+
+    .arrow-icon {
+        height: 3.125rem;
+        width: 2.625rem;
+        margin-right: 0;
+        margin-left: auto;
+        transform: translateY(-21%);
+        right: 0;
+
+    }
+
+    .card-header .fa {
+        transition: .3s transform ease-in-out;
+        transform: translate(100%, 100%);
+    }
+
+    .card-header .collapsed .fa {
+        transform: translate(100%, 100%) rotate(-90deg);
+    }
+
+    @media only screen and (min-width: 1200px) {
+        #{{ include.id }}>.card-body {
+            height: 15.75rem;
+        }
+    }
+</style>

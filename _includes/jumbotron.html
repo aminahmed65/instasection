@@ -1,0 +1,29 @@
+<section class="card bg-dark text-white rounded-0 border-0 overflow-hidden">
+    <img src={{ include.img-lg }} alt={{ include.alt }} class="d-none d-sm-block card-img jumbotron-img">
+    <img src={{ include.img-sm }} alt={{ include.alt }} class="d-block d-sm-none">
+    <div
+        class="card-img-overlay rounded-0 opacity-overlay d-flex justify-content-center align-items-center flex-column">
+        <h2 class="card-title text-dark text-center">{{ include.title }}</h2>
+        <div class="text-center mt-3">
+            <a href={{ include.btn-link }}
+                class="btn bg-dark-blue text-white button-text rounded-0 px-5 py-3">{{ include.btn-text }}</a>
+        </div>
+    </div>
+</section>
+<style>
+    .opacity-overlay {
+        width: 60%;
+        height: 53.0957%;
+        background: rgba(255, 255, 255, 0.75);
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    @media only screen and (max-width: 992px) {
+        .opacity-overlay {
+            width: 86.9565%;
+            height: 64.684%;
+        }
+    }
+</style>

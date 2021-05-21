@@ -1,0 +1,55 @@
+<section id="announcement" class="container-fluid position-fixed py-1 bottom-0 bg-orange animate__animated ">
+    <div class="row position-relative top-50">
+        <div class="">
+            <p class="sub-heading-1 footer-txt position-absolute start-50 d-inline text-nowrap">
+                Take the first step, <a href="" class="text-dark">apply to College Prep.</a>
+            </p>
+        </div>
+        <button class="btn-close p-2 announcement-btn text-dark rounded-circle border-dark position-absolute"
+            aria-label="Close" type="button"></button>
+    </div>
+</section>
+<style lang="css">
+    .footer-txt {
+        transform: translate(-60%, -50%);
+    }
+
+    .announcement-btn {
+        opacity: 1;
+        transform: translateY(-50%);
+        border: 3px solid black;
+    }
+
+    @media only screen and (min-width: 768px) {
+        #announcement {
+            height: 4.375rem;
+        }
+
+        .announcement-btn {
+            left: 90%;
+            border-width: 4px;
+        }
+
+        .footer-txt {
+            transform: translateX(-50%);
+            top: -1.3rem;
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        #announcement {
+            height: 3.125rem;
+        }
+
+        .announcement-btn {
+            left: 85%;
+            border-width: 3px;
+            width: 9px;
+            height: 9px;
+        }
+
+        .footer-txt {
+            font-size: 0.875rem;
+        }
+    }
+</style>

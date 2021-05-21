@@ -1,0 +1,114 @@
+/* Typography */
+h1,
+h2,
+h3{
+    font-family: 'Playfair Display', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+}
+
+h1{
+    font-size: 2.5em;
+}
+
+h2{
+    font-size: 2em;
+}
+
+h3{
+    font-size: 1.5em;
+}
+
+.sub-heading-1, 
+.sub-heading-2,
+.body-text,
+.button-text{
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+}
+
+.sub-heading-1,
+.sub-heading-2,
+.button-text {
+    font-weight: 500;
+}
+
+.body-text,
+.button-text {
+    font-size: 1.125em;
+    line-height: 1.35rem;
+}
+
+.sub-heading-1 {
+    font-size: 1.5em;
+}
+
+.sub-heading-2{
+    font-size: 1em;
+    line-height: 1.2rem;
+}
+
+.body-text{
+    font-weight: normal;
+}
+
+.button-text{
+    font-weight: bold;
+}
+
+
+
+/* Background Colors */
+.bg-dark-purple{
+    background: #092445;
+}
+.bg-orange{
+    background: #FD8732;
+}
+.bg-light-orange{
+    background: #F7C849;
+}
+.bg-light-yellow{
+    background: #FDE195;
+}
+.bg-light-peach {
+    background: #FFE5A6;
+}
+.bg-sea-grean{
+    background: #568295;
+}
+.bg-ice-white{
+    background: #F5F7FC;
+}
+.bg-light-blue{
+    background: #7F93DC;
+}
+.bg-dark-blue{
+    background: #516DD4;
+}
+
+/* Text Colors */
+.text-dark-purple{
+    color: #092445;
+}
+.text-orange{
+    color: #FD8732;
+}
+.text-light-orange{
+    color: #F7C849;
+}
+.text-light-yellow{
+    color: #FDE195;
+}
+.text-sea-grean{
+    color: #568295;
+}
+.text-ice-white{
+    color: #F5F7FC;
+}
+.text-light-blue{
+    color: #7F93DC;
+}
+.text-dark-blue{
+    color: #516DD4;
+}
