@@ -58,12 +58,26 @@
 </style>
 <script type="text/javascript">
 $(document).ready(function() {
-  var feed = new Instafeed({
-    accessToken: InstagramToken,
-    limit: 12,
-    template: '<a href="{{link}}"><img title="{{caption}}" src="{{image}}" /></a>',
-  });
-  feed.run();
+ 
+ // The Url from your Authorisations list  
+ var instantTokenApiUrl = 'https://ig.instant-tokens.com/users/88c1e89d-3b07-434e-af99-490e873ed8e6/instagram/17841447728938854/token?userSecret=1oe72my70spb6qsoocaq97'
+ 
+   $.ajax({
+         url: instantTokenApiUrl,
+     dataType: 'json'
+       })
+        .done(function( response ) {
+         
+         if (!response.Token) {
+           console.log('Error :: ', response);
+         } else {
+             var feed = new Instafeed({
+                        accessToken: response.Token
+                       });
+             feed.run();
+           }
+ });
+
 });
 </script>
 <script>document.getElementById('es-new').style.display = 'none'</script>
